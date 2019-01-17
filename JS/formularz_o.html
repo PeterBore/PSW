@@ -1,0 +1,105 @@
+<!DOCTYPE HTML>
+<html lang="pl">
+<head >
+	<meta charset="utf-8"/>
+	<title>Systemy webowe - lista nr 2 - formularz_os</title>
+	<meta name="description" content ="Systemy webowe - lista nr"/>
+	<meta name="keywords" content="list nr1, systemy webowe"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+	<link rel="stylesheet" href="style1.css" type="text/css"/>
+	<script type="text/javascript"src="functions.js" >
+	
+	
+	
+
+	</script>
+	
+	
+	
+</head>
+<body onload="zmienObraz();windowListener()">
+			<header>
+			<div id="logo">
+				<h1><img src = "img/kino.jpg" alt="Logo" width="150" height="80"/>
+				<a href= "index.html">Przegląd kinowy</a></h1>
+				</div>
+			</header>
+			<section id = "1">
+				<nav>
+					<h2>Menu</h2>
+					<ul>
+						<li><a href="filmy.html">
+						Przegląd najwyżej ocenionych filmów</a></li>
+						<li><a href="kina.html">
+						Przegląd najlepszych kin we Wrocławiu</a></li>
+						<li><a href="formularz_o.html">
+						Formularz osobowy</a></li>
+						<li><a href="formularz_o2.html">
+						Formularz z dodatkowymi informacjami</a></li>
+					</ul>
+				</nav>
+			</section>
+			
+			<section id="2">
+				<article>
+					<header><br/>
+							<h3 align="left">FORMULARZ OSOBOWY</h3>
+					</header>	  		
+
+					<div id="formularz">
+					<table cellspacing="5" cellpadding="5">
+						<tr>
+											
+								<form action="mailto:edytapuziak@gmail.com" method="post" enctype="text/plain" autocomplete="on" >
+									
+									<td>Imie: </td><td><input name="Imię" autofocus/></td><td> [wpisz tekst] </td>
+						</tr>
+						<tr>		<td>Nazwisko: </td><td><input name="Nazwisko" required /> </td><td>[wpisz tekst]</td>
+						</tr>
+						<tr>						
+									<td>Miesiąc urodzin:</td><td>
+									<from action="formularz_o.html" method="get">
+									<input list="Miesiac"
+									name="Miesiac">
+									<datalist id="Miesiac">
+										<option value="styczeń">
+										<option value="luty">
+										<option value="marzec">
+										<option value="kwiecień">
+										<option value="maj">
+										<option value="czerwiec">
+										<option value="lipiec">
+										<option value="sierpień">
+										<option value="wrzesień">
+										<option value="październik">
+										<option value="listopad">
+										<option value="grudzień">
+										</datalist>  </td><td>[wybierz z listy]</td><br />	
+						</tr>										
+						<tr>			<td>Mail:</td><td> <input type= "email" name="email"  required /></td><td>[wpisz adres]</td>
+						</tr>
+						<tr>			<td>Telefon:</td><td>   <input type="tel" name="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}"  title="[0-9]{3}-[0-9]{3}-[0-9]{3}"/> </td><td>[wpisz cyfry]</td>
+						</tr>		
+						<tr>
+									<td><input type="submit" value="Wyślij formularz" />
+									<input type="reset" value="Wyczyść dane"  /> </td>									
+						</tr>		
+								</form>		
+						</tr>
+					</table>
+					</div>					
+				</article>
+				<br/><br/>
+				<div id="Changer">
+				</div>
+				<h3 align="left">Ocena strony:</h3>
+				<p id="ocena">0.0</p>
+			</section>
+			
+			<footer>
+			<div id="stopka">
+				<h5>Systemy webowe &copy; Wszelkie prawa zastrzeżone</h5>
+				</div>
+			</footer>
+
+</body>
