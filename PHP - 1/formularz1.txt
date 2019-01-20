@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset = "utf-8">
+		
+		<title>Systemy webowe - lista nr 2 - formularz</title>
+		<meta name="description" content ="Systemy webowe - lista nr"/>
+		<meta name="keywords" content="list nr1, systemy webowe"/>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+		<link rel="stylesheet" href="style1.css" type="text/css"/>
+		<title>Formularz</title>
+		
+	</head>
+	<body>
+
+<?php ini_set('display_errors', 1);
+		error_reporting(E_ALL); ?>
+
+		<h1>Formularz rejestracyjny</h1>
+
+		<form method= "post" action = "wynik.php?co=get&amp;klucz=wartość">
+
+			<div>
+				<label>Imię:</label>
+				<input type="text" name="imie" required>
+			</div>
+
+			<div>
+				<label>Nazwisko:</label>
+				<input type= "text" name= "nazwisko" required>
+			</div>
+
+			<div>
+				<label>Nr telefonu:</label>
+				<input type="text" name="telefon" placeholder = "+48-xxx-xxxxxx" />
+			</div>
+
+			<p>
+				Wybierz uczelnię, na której studiujesz
+			</p>
+
+			<select name = "uczelnia">
+				<option>Politechnika Wrocławska</option>
+				<option>Akademia Górniczo-Hutnicza</option>
+				<option>Uniwersytet Szczeciński</option>
+			</select>
+
+			<p>
+				Zaznacz swoją płeć
+			</p>
+
+			<p>
+
+				<input type="radio" name="plec" value="kobieta" checked> kobieta
+				<input type="radio" name="plec" value="mężczyzna"> mężczyzna
+			</p>
+
+
+
+			<p>
+				Wybierz języki które znasz w stopniu przynajmniej podstawowym
+			</p>
+
+
+
+			<p>
+				<input type="checkbox" name="temat[]" value="angielski" checked />
+				angielski
+				<br>
+				<input type="checkbox" name="temat[]" value="niemiecki" />
+				niemiecki
+				<br>
+				<input type="checkbox" name="temat[]" value="hiszpański" />
+				hiszpański
+				<br>
+				<input type="checkbox" name="temat[]" value="włoski" />
+				włoski
+				<br>
+				<input type="checkbox" name="temat[]" value="rosyjski" />
+				rosyjski
+			</p>
+
+			<div>
+				<label>Wiek:</label>
+				<input type="number" name= "wiek" value="18">
+			</div>
+			
+
+			<p>
+				<input type ="submit" name ="submit" value="Wyślij">
+			</p>
+			
+			<p>
+				Wybierz funckję
+			</p>
+
+			<select name = "sglobalne">
+				<option>serwer</option>
+				<option>get</option>
+				<option>post</option>
+			</select>
+
+		</form>
+		
+	</body>
+</html>
